@@ -2,7 +2,7 @@
 from typing import Optional
 from sqlmodel import Field, SQLModel
 
-class UserBase(SQLModel, table=True):
+class User(SQLModel, table=True):
     """Represent the User model"""
     id: Optional[int] = Field(default=None, primary_key=True)   
     email: str = Field(unique=True,nullable=False)
