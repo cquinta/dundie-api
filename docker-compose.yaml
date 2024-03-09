@@ -11,6 +11,7 @@ services:
     environment:
       DUNDIE_DB__uri: "postgresql://postgres:postgres@db:5432/${DUNDIE_DB:-dundie}"
       DUNDIE_DB__connect_args: "{}"
+      DUNDIE_SECURITY__SECRET_KEY: ""
     volumes:
       - .:/home/app/api
     depends_on:

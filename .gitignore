@@ -6,3 +6,6 @@ __pycache__
 **/**/**/__pycache__
 .secrets.toml
 docs/book
+commands
+*.pdf
+email.log
